@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <form action="http://localhost:5500/teste" method="post">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+
+            <div>
+                <label for="username">Nome</label>
+                <input type="text" name="name" id="username" required>
+            </div>
+
+            <div>
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="lastname" id="lastname" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone" required>
+            </div>
+            <div>
+                <label for="nascimento">Data de Nascimento</label>
+                <input type="date" name="data de nascimento" id="nascimento" required>
+            </div>
+            <div>
+                <label for="rg">RG</label>
+                <input type="text" name="registro" id="rg">
+            </div>
+            <div>
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" required>
+            </div>
+            <div>
+                <label for="nome da mae">Nome da Mãe</label>
+                <input type="text" name="nome da mae" id="nome da mae" required>
+            </div>
+            <div>
+                <label for="genero">Gênero</label>
+                <input type="text" name="genero" id="genero" >
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <div>
+                <label for="cep">CEP</label>
+                <input type="number" name="cep" id="cep">
+            </div>
+            <div>
+                <label for="rua">Rua</label>
+                <input type="text" name="rua" id="rua" required>
+            </div>
+            <div>
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro" required>
+            </div>
+            <div>
+                <label for="numero">Número</label>
+                <input type="number" name="numero" id="numero" required>
+            </div>
+            <div>
+                <label for="complemento">Complemento</label>
+                <input type="text" name="complemento" id="complemento">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Produtos</legend>
+
+            <p>Selecione dentre os produtos a seguir os que mais lhe interessam para receber informações e novidades por email</p>
+
+            <fieldset>
+                <legend>Acessórios</legend>
+
+                <label for="bolsas">Bolsas</label>
+                <input type="checkbox" name="bolsas" id="bolsas">
+                <br>
+
+                <label for="chapeus">Chapéus</label>
+                <input type="checkbox" name="chapeus" id="chapeus">
+                <br>
+
+                <label for="chaveiros">Chaveiros</label>
+                <input type="checkbox" name="chaveiros" id="chaveiros">
+            </fieldset>
+
+            <fieldset>
+                <legend>Roupas</legend>
+
+                <label for="tops">Tops</label>
+                <input type="checkbox" name="tops" id="tops">
+                <br>
+
+                <label for="conjuntos">Conjuntos</label>
+                <input type="checkbox" name="conjuntos" id="conjuntos">
+                <br>
+
+                <label for="vestidos">Vestidos</label>
+                <input type="checkbox" name="vestidos" id="vestidos">
+            </fieldset>
+            
+        </fieldset>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
